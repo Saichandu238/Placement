@@ -1,0 +1,104 @@
+<!-- 11. Write an HTML form with fields for Name, Email, Message, and a Submit button.  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 11</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .form-container label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 6px;
+        }
+
+        .form-container input[type="text"],
+        .form-container textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        .form-container textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .form-container button {
+            width: 300px;
+            padding: 12px;
+            border: none;
+            background: linear-gradient(45deg, #4CAF50, #66BB6A);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 0 auto;
+        }
+
+        .form-container button:hover {
+            background: linear-gradient(45deg, #43A047, #388E3C);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Question 11</h2>
+        <form action="Validation.php" method="POST">
+
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" maxlength="150" required>
+
+            <label for="Email">E-Mail</label>
+            <input type="text" id="mail" name="mail" maxlength="150" required>
+
+            <label for="message">message</label>
+            <textarea id="message" name="message" required></textarea>
+
+
+            <button type="submit">Submit Problem</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
